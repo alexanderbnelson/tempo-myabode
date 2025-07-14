@@ -15,20 +15,14 @@ This document describes the user journey for myAbode users becoming Tempo custom
 - **Action**: User clicks the CTA button, triggering a secure API call to Tempo
 - **Process**: System makes a POST request to Tempo partner API endpoint
 - **Data Transfer**: Request includes user&apos;s email, name, organization ID, and encrypted partner secret
-- **Response**: Tempo API returns a secure magic link URL
+- **Response**: Tempo API generates and returns a secure magic link URL (valid for 1 hour)
 
-### Stage 3: Magic Link Generation
-- **System**: Tempo API processes the request and generates a secure magic link
-- **Security**: Link contains an encrypted token with digital signature for verification
-- **Expiration**: Magic link is time-limited (valid for 1 hour)
-- **Format**: Link points to Tempo domain with authentication parameters
-
-### Stage 4: Redirect
+### Stage 3: Redirect
 - **Action**: User&apos;s browser is automatically redirected to the generated magic link
 - **Transition**: URL changes from myAbode domain to Tempo domain
 - **User Experience**: Brief loading state as the redirect processes
 
-### Stage 5: Account Creation & Auto-Login
+### Stage 4: Account Creation & Auto-Login
 - **Process**: Tempo system automatically creates a new user account based on the verified magic link
 - **Authentication**: User is logged in without requiring password entry
 - **Verification**: Email address is automatically verified through the partner authentication
@@ -38,14 +32,14 @@ This document describes the user journey for myAbode users becoming Tempo custom
   - User profile displays partner affiliation
 - **User Experience**: Seamless login without manual account creation steps
 
-### Stage 6: Site Creation
+### Stage 5: Site Creation
 - **Location**: User arrives at the Tempo dashboard
 - **Interface**: Dashboard displays Tempo branding and site management options
 - **Action**: User can begin creating a new website using the &quot;Create New Site&quot; functionality
 - **Tools**: Access to site builder interface and website creation tools
 - **Status**: Site begins in draft mode for development and customization
 
-### Stage 7: Publishing & Pricing
+### Stage 6: Publishing & Pricing
 - **Location**: User navigates to the plans and pricing page
 - **Pricing Display**: Pricing table shows original prices with partner discount clearly highlighted
 - **Discount Application**: Partner discount (e.g., 20% off) is automatically applied due to the partner organization connection
