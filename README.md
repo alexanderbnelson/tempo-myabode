@@ -42,8 +42,8 @@ This document describes the user journey for myAbode users becoming Tempo custom
 ### Stage 6: Publishing & Pricing
 - **Location**: User navigates to the plans and pricing page
 - **Pricing Display**: Pricing table shows original prices with partner discount clearly highlighted
-- **Discount Application**: Partner discount (e.g., 20% off) is automatically applied due to the partner organization connection
-- **User Experience**: Discount is prominently displayed (e.g., &quot;20% Partner Discount Applied!&quot;) with clear savings calculation
+- **Discount Application**: Partner discount is automatically applied due to the partner organization connection
+- **User Experience**: Discount is prominently displayed with clear savings calculation
 - **Next Steps**: User can proceed to checkout with discounted pricing already applied
 
 ## Security Features
