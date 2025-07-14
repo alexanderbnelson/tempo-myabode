@@ -13,7 +13,7 @@ This document describes the user journey for myAbode users becoming Tempo custom
 
 ### Stage 2: API Request
 - **Action**: User clicks the CTA button, triggering a secure API call to Tempo
-- **Process**: System makes a POST request to `/api/auth/partner-magic-link` endpoint
+- **Process**: System makes a POST request to Tempo partner API endpoint
 - **Data Transfer**: Request includes user&apos;s email, name, organization ID, and encrypted partner secret
 - **Response**: Tempo API returns a secure magic link URL
 
