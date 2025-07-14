@@ -1,4 +1,4 @@
-# Partner Magic Link User Flow
+# Tempo × myAbode User Onboarding Flow
 
 ## Overview
 This document describes the user journey for myAbode users becoming Tempo customers through a partner organization&apos;s magic link system. The flow enables seamless transition from partner platforms to Tempo with automatic account creation, authentication, and partner benefits.
