@@ -62,20 +62,3 @@ This user flow provides several advantages:
 3. **Instant Partner Benefits**: Discounts and partner perks are automatically applied
 4. **Security**: Multi-layered security ensures safe data transfer and account creation
 5. **User Experience**: Streamlined process reduces abandonment and increases conversion
-
-## Technical Implementation
-
-The partner magic link system relies on:
-- **API Endpoint**: `ontempo.io/api/partner/generate-link` handles link generation requests
-- **Data Payload**: Includes user email, name, organization ID, and encrypted partner secret
-- **Magic Link Format**: Time-limited URL with encrypted token and digital signature
-- **Account Creation**: Automatic user account generation with partner organization linking
-- **Benefit Application**: Partner discounts and perks are applied during account setup
-
-## Use Cases
-
-This flow is designed for:
-- **Partner Organizations**: Companies wanting to provide seamless access to Tempo for their users
-- **Sales Integration**: Converting partner leads into Tempo customers with minimal friction
-- **Onboarding**: Streamlining the user acquisition process through partner channels
-- **Customer Experience**: Providing a premium, white-glove experience for partner referrals
