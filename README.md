@@ -66,7 +66,7 @@ This user flow provides several advantages:
 ## Technical Implementation
 
 The partner magic link system relies on:
-- **API Endpoint**: `ontempo.io/api/partner/generate-link` handles partner authentication requests
+- **API Endpoint**: `ontempo.io/api/partner/generate-link` handles link generation requests
 - **Data Payload**: Includes user email, name, organization ID, and encrypted partner secret
 - **Magic Link Format**: Time-limited URL with encrypted token and digital signature
 - **Account Creation**: Automatic user account generation with partner organization linking
