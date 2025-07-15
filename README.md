@@ -6,45 +6,37 @@ This document describes the user journey for myAbode users becoming Tempo custom
 ## User Flow Stages
 
 ### Stage 1: Starting Point (myAbode)
-- **Location**: myAbode hosted landing page
-- **User State**: Authenticated myAbode user
-- **Interface**: Landing page displays myAbode branding with a prominent &quot;Get Started with Tempo&quot; call-to-action button
-- **Security**: User is already authenticated within the myAbode system
+- Authenticated user is on myAbode hosted landing page
+- Landing page displays myAbode branding with a prominent &quot;Get Started with Tempo&quot; call-to-action button
 
 ### Stage 2: API Request
-- **Action**: User clicks the CTA button, triggering a secure API call to Tempo
-- **Process**: System makes a POST request to Tempo partner API endpoint
-- **Data Transfer**: Request includes user&apos;s email, name, organization ID, and encrypted partner secret
-- **Response**: Tempo API generates and returns a secure magic link URL (valid for 1 hour)
+- User clicks the CTA button, triggering a secure API call to Tempo
+- System makes a POST request to Tempo partner API endpoint
+- Request includes user&apos;s email, name, and partner secret
+- Tempo API generates and returns a secure magic link URL (valid for 1 hour)
 
 ### Stage 3: Redirect
-- **Action**: User&apos;s browser is automatically redirected to the generated magic link
-- **Transition**: URL changes from myAbode domain to Tempo domain
-- **User Experience**: Brief loading state as the redirect processes
+- User&apos;s browser is automatically redirected to the generated magic link
+- URL changes from myAbode domain to Tempo domain
+- Brief loading state as the redirect processes
 
 ### Stage 4: Account Creation & Auto-Login
-- **Process**: Tempo system automatically creates a new user account based on the verified magic link
-- **Authentication**: User is logged in without requiring password entry
-- **Verification**: Email address is automatically verified through the partner authentication
-- **Partner Benefits**: 
-  - Account is linked to the partner organization
-  - Partner discount is automatically applied
-  - User profile displays partner affiliation
-- **User Experience**: Seamless login without manual account creation steps
+- Tempo system automatically creates a new user account based on the verified magic link
+- User is logged in without requiring password entry (session token cookie set. subsequent logins will require using Tempo magic link sign in at https://app.ontempo.io/login)
+- Account is linked to the partner organization
 
 ### Stage 5: Site Creation
-- **Location**: User arrives at the Tempo dashboard
-- **Interface**: Dashboard displays Tempo branding and site management options
-- **Action**: User can begin creating a new website using the &quot;Create New Site&quot; functionality
-- **Tools**: Access to site builder interface and website creation tools
-- **Status**: Site begins in draft mode for development and customization
+- User arrives at the Tempo dashboard on site creation form
+- User can begin creating a new website using the &quot;Create New Site&quot; functionality
+- Site begins in draft mode for development and customization
+- Site cannot be published unless a subscription is purchased
 
 ### Stage 6: Publishing & Pricing
-- **Location**: User navigates to the plans and pricing page
-- **Pricing Display**: Pricing table shows original prices with partner discount clearly highlighted
-- **Discount Application**: Partner discount is automatically applied due to the partner organization connection
-- **User Experience**: Discount is prominently displayed with clear savings calculation
-- **Next Steps**: User can proceed to checkout with discounted pricing already applied
+- User navigates to the plans and pricing page 
+- Pricing table shows original prices with partner discount clearly highlighted
+- Partner discount is automatically applied due to the partner organization connection
+- Discount is prominently displayed with clear savings calculation
+- User can proceed to checkout with discounted pricing already applied in checkout session
 
 ## Security Features
 
